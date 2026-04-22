@@ -1,12 +1,16 @@
-<h2>Add Schedule</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<form method="POST">
-    Subject <input name="subject"><br>
-    Day <input name="day"><br>
-    Time <input name="time"><br>
+<div class="card">
+    <h2>➕ Add Schedule</h2>
 
-    Color:
-    <input type="color" name="color"><br>
+    <form method="POST">
+        <input name="subject" placeholder="Subject">
+        <input name="day" placeholder="Day">
+        <input name="time" placeholder="Time">
+        <input type="color" name="color">
 
-    <button>Save</button>
-</form>
+        <button>Save</button>
+    </form>
+
+    <a href="/dashboard">Back</a>
+</div>
