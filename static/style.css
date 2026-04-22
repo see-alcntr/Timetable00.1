@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAV / HEADER */
+.header {
+    background: #111827;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 20px;
+}
+
+/* BUTTONS */
+a, button {
+    background: #3b82f6;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+a:hover, button:hover {
+    background: #2563eb;
+}
+
+/* CENTER CARD */
+.card {
+    width: 350px;
+    margin: 80px auto;
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* TABLE */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #111827;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #374151;
+}
+
+/* GRID LAYOUT */
+.container {
+    width: 90%;
+    margin: auto;
+}
