@@ -1,9 +1,13 @@
-<h2>Register</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<form method="POST">
-    <input name="username" placeholder="Username" required>
-    <input name="password" type="password" placeholder="Password" required>
-    <button type="submit">Create Account</button>
-</form>
+<div class="card">
+    <h2>🆕 Register</h2>
 
-<a href="/">Login</a>
+    <form method="POST">
+        <input name="username" placeholder="Username">
+        <input name="password" type="password" placeholder="Password">
+        <button>Create Account</button>
+    </form>
+
+    <a href="/">Back to Login</a>
+</div>
