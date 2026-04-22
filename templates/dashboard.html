@@ -1,26 +1,33 @@
-<h1>Your Timetable</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<a href="/add">Add</a>
-<a href="/calendar">Calendar View</a>
-<a href="/export_pdf">Export PDF</a>
-<a href="/logout">Logout</a>
+<div class="header">
+    <h1>📅 Student Timetable</h1>
+    <div>
+        <a href="/add">➕ Add</a>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
 
-<table border="1">
-<tr>
-<th>Subject</th>
-<th>Day</th>
-<th>Time</th>
-<th>Color</th>
-<th>Action</th>
-</tr>
+<div class="container">
 
-{% for d in data %}
-<tr style="background: {{ d[4] }}">
-    <td>{{ d[2] }}</td>
-    <td>{{ d[3] }}</td>
-    <td>{{ d[4] }}</td>
-    <td>{{ d[5] }}</td>
-    <td><a href="/delete/{{ d[0] }}">Delete</a></td>
-</tr>
-{% endfor %}
-</table>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Color</th>
+            <th>Action</th>
+        </tr>
+
+        {% for d in data %}
+        <tr style="background: {{ d[5] }}">
+            <td>{{ d[2] }}</td>
+            <td>{{ d[3] }}</td>
+            <td>{{ d[4] }}</td>
+            <td>{{ d[5] }}</td>
+            <td><a href="/delete/{{ d[0] }}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</div>
